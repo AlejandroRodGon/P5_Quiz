@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Quizzes</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>Welcome to Quizzes</h1>
+    <p>Quizzes de Alejandro</p>
+    <ul>
+        <%for(let i = 0; i < quizzes.length; i++) { %>
+      <li>
+          <%= quizzes[i].question;%>: <%= quizzes[i].answer;%>
+      </li>
+        <%}%>
+    </ul>
+    <a href="/">Raiz</a>
+    <a href="/credits">Credits</a>
+  </body>
+</html>
+
+
